@@ -1,0 +1,22 @@
+{
+  "name": "fft-tools",
+  "version": "0.0.0",
+  "description": "Matlab package for iterative image reconstruction",
+  "scripts": {
+    "postinstall": "node scripts/rename.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edibella/fft-tools.git"
+  },
+  "keywords": ["matlab", "package", "fourier", "transform", "tools"],
+  "author": "KC Erb <iamkcerb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edibella/fft-tools/issues"
+  },
+  "homepage": "https://github.com/edibella/fft-tools#readme",
+  "dependencies": {
+    "matlab-spec": "^1.1.0"
+  }
+}
