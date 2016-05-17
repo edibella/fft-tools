@@ -20,7 +20,7 @@ It is crucial to note the difference in naming conventions between MATLAB and NP
 
 To make sure this software works as expected, tests have been provided and which can be run by executing `FftTools.test`. These tests provide a very basic data-in data-out testing and it's these example data files that take up the bulk of the size of this repository.
 
-Since all test data is stored in +tests/private, the files in this folder are not version controlled via `git update-index --assume-unchanged` as described here: http://stackoverflow.com/questions/12288212/git-update-index-assume-unchanged-on-directory.
+Since all test data is stored in +tests/private, the files in this folder should not be version controlled. You need to tell your local `git` to not track changes in them via `git update-index --assume-unchanged` as described here: http://stackoverflow.com/questions/12288212/git-update-index-assume-unchanged-on-directory.
 
 If you want to contribute to this project please keep tests in mind and do not commit any new data without telling git to "assume-unchanged" to avoid bloating the .git file.
 
