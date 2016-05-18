@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/edibella/fft-tools#readme",
   "dependencies": {
-    "matlab-spec": "^1.1.0"
+    "matlab-spec": "^2.0.0"
   }
 }
