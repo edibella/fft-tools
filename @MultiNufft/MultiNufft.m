@@ -41,8 +41,6 @@ classdef MultiNufft
       kys = reshape(kys, self.kSize_x, self.kSize_y, self.kSize_z);
       self.kx = kxs;
       self.ky = kys;
-      self.kx = real(k);
-      self.ky = imag(k);
     end
     function self = init_nufft_vars(self, imSize, w, shift)
       Nd = imSize;

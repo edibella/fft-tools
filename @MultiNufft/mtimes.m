@@ -33,7 +33,7 @@ function output_data = mtimes(self, input_data)
     % squish to 3D
     data_slice = squeeze(input_data(:,:,i,:));
     nufft_struct = self.nufft_structs(i);
-    
+
     % Use 2D slices of the 3D input data
     for j = 1:input_data_z_size
       slice_2D = data_slice(:,:,j);
@@ -49,6 +49,15 @@ function output_data = mtimes(self, input_data)
   end
   % squeeze in case of singleton dimensions
   output_data = squeeze(output_data);
+
+  % reshape back to original size
+  z_shapes = size_arr(3:end);
+  if self.adjoint
+    output_shape = horzcat([self.imSize_x, self.imSize_y], z_shapes);
+  else
+    output_shape = horzcat([self.kSize_x, self.kSize_y], z_shapes);
+  end
+  output_data = reshape(output_data, output_shape);
   % reset adjoint
   self.adjoint = 0;
 end
