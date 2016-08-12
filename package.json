@@ -1,6 +1,6 @@
 {
   "name": "fft-tools",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Matlab package for Fourier transforms of MRI images.",
   "scripts": {
     "postinstall": "node scripts/rename.js"
